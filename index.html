@@ -2,8 +2,47 @@
   <head>
     <title>Austin and Mindy's Wedding</title>
   </head>
+  <style>
+.swipeView {
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+  will-change: transform;
+  align-content: center;
+  overflow-x: auto;
+  scroll-snap-coordinate: 0 0;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  height: 80vh;
+  scroll-snap-align: start;
+}
+
+.green {
+  background: #ABE66F;
+}
+
+.purple {
+  background: #4E4E94;
+}
+
+.orange {
+  background: #FD8F58;
+}
+  </style>
   <body>
-    <h1>Welcome to Austin and Mindy's Wedding!</h1>
-    <h2>git test</h2>
+    <div class="swipeView">
+      <section class="green">
+        
+      </section>
+      <section class="purple">
+       
+      </section>
+      <section class="orange">
+         
+      </section>
+    </div>
   </body>
 </html>
