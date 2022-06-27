@@ -17,6 +17,8 @@
 section {
   height: 100vh;
   scroll-snap-align: start;
+  display: flex;
+  align-items: center;
 }
 
 .first {
@@ -56,18 +58,38 @@ section {
 body {
   background: #ffffff;
 }
+
+img {
+    max-width: 5%;
+    max-height: 5%;
+    opacity: 0.3;
+}
+.right {
+  margin-left: auto;
+}
+.left {
+  margin-right: auto;
+}
   </style>
   <body>
     <div class="swipeView">
       <section class="first">
+        <img src="images/right.png" class="right">
       </section>
       <section class="second">
+        <img src="images/left.png" class="left">
+        <img src="images/right.png" class="right">
       </section>
       <section class="third">
+        <img src="images/left.png" class="left">
+        <img src="images/right.png" class="right">
       </section>
       <section class="fourth">
+        <img src="images/left.png" class="left">
+        <img src="images/right.png" class="right">
       </section>
       <section class="fifth">
+        <img src="images/left.png" class="left">
       </section>
     </div>
   </body>
