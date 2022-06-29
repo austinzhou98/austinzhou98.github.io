@@ -1,11 +1,12 @@
 <html>
   <head>
     <title>Austin and Mindy's Wedding</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
   </head>
   <style>
 .swipeView {
   display: grid;
-  grid-template-columns: repeat(5, 100%);
+  grid-template-columns: repeat(6, 100%);
   will-change: transform;
   align-content: center;
   overflow-x: auto;
@@ -55,20 +56,43 @@ section {
   background-position: center;
   background-size: contain;
 }
+
+.sixth {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+}
 body {
   background: #ffffff;
 }
 
-img {
-    max-width: 10%;
-    max-height: 10%;
-    opacity: 0.4;
-}
 .right {
   margin-left: auto;
+  max-width: 10%;
+  max-height: 10%;
+  opacity: 0.4;
 }
 .left {
   margin-right: auto;
+  max-width: 10%;
+  max-height: 10%;
+  opacity: 0.4;
+}
+.container {
+  width: 80%;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Playfair Display';
+}
+button {
+  border-radius:10px; 
+  padding:15px;
+  font-size: 30px;
+  font-family: 'Playfair Display';
+}
+.picture {
+  width: 30%;
 }
   </style>
   <body>
@@ -90,6 +114,23 @@ img {
       </section>
       <section class="fifth">
         <img src="images/left.png" class="left">
+        <img src="images/right.png" class="right">
+      </section>
+      <section class="sixth">
+        <img src="images/left.png" style="max-width: 10%;max-height: 10%;opacity: 0.4;">
+        <div class="container">
+          <img src="images/picture.jpg" class="picture">
+          <p>
+            Please upload your favorite pictures or videos <br />
+            to the Google Drive Link below. <br /><br />
+            Make sure you have the Google Drive App<br /> 
+            installed on your phone. <br /><br />
+            <button onclick="location.href='https://2hac.page.link/PLWU'">Upload</button> <br /><br />
+            Thank you!
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </p>
+          
+        </div>
       </section>
     </div>
   </body>
